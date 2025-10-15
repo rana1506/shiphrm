@@ -1,0 +1,1 @@
+import React from 'react'; export default function OrgTree({divisions}){ return (<div>{divisions.map(d=>(<div key={d._id} className="card"><h3>{d.name}</h3><div><strong>Officers</strong><ul>{(d.officers||[]).map(o=><li key={o._id}>{o.rank} {o.name}</li>)}</ul><strong>Sailors</strong><ul>{(d.sailors||[]).map(s=><li key={s._id}>{s.name}</li>)}</ul></div></div>))}</div>); }

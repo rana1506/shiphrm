@@ -1,0 +1,2 @@
+import React,{useEffect,useState} from 'react'; import axios from '../api/axiosInstance'; import Nav from '../shared/Nav';
+export default function Officers(){ const [off,setOff]=useState([]); useEffect(()=>{ axios.get('/officers').then(r=>setOff(r.data)).catch(()=>setOff([])); },[]); return (<div><Nav /><div className="container"><h1>Officers</h1><pre>{JSON.stringify(off,null,2)}</pre></div></div>); }

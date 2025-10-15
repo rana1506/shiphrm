@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; margin:0; padding:0; }
+.nav { background:#0b3d91; color:white; padding:10px; display:flex; gap:12px; align-items:center; }
+.container { padding:16px; }
+.button { background:#0b3d91; color:white; border:none; padding:8px 12px; border-radius:6px; cursor:pointer; }
+.quick { margin-left:8px; background:#2a7ae2; }
+.link { color:white; text-decoration:none; }
+.card { border:1px solid #ddd; padding:12px; border-radius:8px; margin-bottom:12px; }

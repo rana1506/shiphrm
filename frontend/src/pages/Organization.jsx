@@ -1,0 +1,2 @@
+import React,{useEffect,useState} from 'react'; import axios from '../api/axiosInstance'; import Nav from '../shared/Nav'; import OrgTree from '../components/hierarchy/OrgTree';
+export default function Organization(){ const [divs,setDivs]=useState([]); useEffect(()=>{ axios.get('/divisions').then(r=>setDivs(r.data)).catch(()=>setDivs([])); },[]); return (<div><Nav /><div className="container"><h1>Organization</h1><OrgTree divisions={divs} /></div></div>); }
